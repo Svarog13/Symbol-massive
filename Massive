@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	/*Розробити програму, яка виводить на екран горизонтальну лінію із символів.
+	Кількість символів, який використовувати символ, і яка буде лінія — вертикальна
+	чи горизонтальна — вказує користувач.*/
+	int num, direction;
+	char ch;
+
+	cout << "Enter the symbol" << endl;
+	cin >> ch;
+	cout << "Enter the number of symbol" << endl;
+	cin >> num;
+	cout << "Enter the direction of line: 1 - horizontal, 2 - vertical." << endl;
+	cin >> direction;
+
+	if (direction == 1)
+		while (num != 0)
+		{
+			cout << ch << endl;
+			num--;
+		}
+	else if (direction == 2)
+		while (num != 0)
+		{
+			cout << ch;
+			num--;
+		}
+}
